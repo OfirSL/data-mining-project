@@ -15,12 +15,12 @@ To run the scraper, one should run ***main.py***:\
 
 *Optional arguments:*\
   -h,  --help                          **show** this help message and exit \
-  -c                                   **create** tables for "ofir_samuel" database\
+  -c                                   **create** tables for "shufersal" database\
   -gl                                  **get** subcategories **links** to parse and fill category table \
   -url  URL                            **specific category url** from the "Shufersal" online site to parse and collect to the shufersal database \
-  -all                                 get all links from category table, **parse and fill** "Shufersal" database \
+  -all                                 get all links from category table, **parse and fill** "shufersal" database \
   -translate TABLE COLUMN LANGUAGE=ENGLISH \
-                                       **translate** specific table and column from the "Shufersal" database to the desired language (english by default).\
+                                       **translate** specific table and column from the "shufersal" database to the desired language (english by default).\
 
 
 \
@@ -28,23 +28,23 @@ To run the scraper, one should run ***main.py***:\
 
 \
 **-c** :
-- -c argument will create the tables for the "ofir_samuel" database.
+- -c argument will create the tables for the "shufersal" database.
 
 \
 **-gl** :
-- "ofir_samuel" tables must exist before using the -gl argument.
+- "shufersal" tables must exist before using the -gl argument.
 
 \
 **-url** :
 - The url following the -url argument should be from the second sub category type, for example look at *sub_links.png*
-- "ofir_samuel" tables must be created before using the -url argument.
-- The products in the url will be parsed and filed to the "ofir_samuel" database.
+- "shufersal" tables must be created before using the -url argument.
+- The products in the url will be parsed and filed to the "shufersal" database.
 - The given url will be inserted to the url column in the category table.
 - Usage example: -url https://www.shufersal.co.il/online/he/%D7%A7%D7%98%D7%92%D7%95%D7%A8%D7%99%D7%95%D7%AA/%D7%A1%D7%95%D7%A4%D7%A8%D7%9E%D7%A8%D7%A7%D7%98/%D7%A4%D7%99%D7%A8%D7%95%D7%AA-%D7%95%D7%99%D7%A8%D7%A7%D7%95%D7%AA/%D7%99%D7%A8%D7%A7%D7%95%D7%AA-%D7%95%D7%A4%D7%99%D7%A8%D7%95%D7%AA-%D7%9E%D7%A6%D7%95%D7%A0%D7%A0%D7%99%D7%9D/c/A0409
 
 \
 **-all** :
-- "ofir_samuel" tables must exist before using the -all argument.
+- "shufersal" tables must exist before using the -all argument.
 - -all will parse all the acceptable urls from the category table. To fill the category table with all the acceptable links one should run the -gl command or alternatively use the -url argument.
 
 \
